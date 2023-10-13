@@ -36,8 +36,15 @@ function rot13(encodedStr) {
   // Only change code below this line
 	let j = 0;
 	for(let i of encodedStr){
+	   // console.log(i);
+	   // if(i!=" ")
+	   // console.log(i+" "+lookup[i]);
+	   if(i!=" "){
 		decodedArr[j] = lookup[i];
+		j++;
+	   }
 	}
+// 	console.log(decodedArr);
   return decodedArr; //return decodedArr
 }
 
