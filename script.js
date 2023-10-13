@@ -41,6 +41,8 @@ function rot13(encodedStr) {
 	   // console.log(i+" "+lookup[i]);
 	   if(i!=" "){
 		decodedArr[j] = lookup[i];
+		else
+		   decodedArr[j] = " ";
 		j++;
 	   }
 	}
